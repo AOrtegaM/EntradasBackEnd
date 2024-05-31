@@ -25,21 +25,7 @@ namespace EntradasBackEnd.Controllers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Deuda>>> GetDeudaView()
         {
-            var balanceViewL = await _context.BalanceView.ToListAsync();
-
-            /* List<BalanceView> balanceViewL = [];
-
-            balanceViewL.Add(new BalanceView(1,"Persona1", "", 2.00m));
-            balanceViewL.Add(new BalanceView(2,"Persona2", "", 1.75m));
-            balanceViewL.Add(new BalanceView(3,"Persona3", "", 1.50m));
-            balanceViewL.Add(new BalanceView(4,"Persona4", "", 1.25m));
-            balanceViewL.Add(new BalanceView(5,"Persona5", "", 1.00m));
-            balanceViewL.Add(new BalanceView(6,"Persona6", "", 1.00m));
-            balanceViewL.Add(new BalanceView(7,"Persona7", "", 0.75m));
-            balanceViewL.Add(new BalanceView(8,"Persona8", "", 0.50m));
-            balanceViewL.Add(new BalanceView(9,"Persona9", "", 0.25m));
-            balanceViewL.Add(new BalanceView(10, "Persona10", "", 0.00m));
-            */
+            var balanceViewL = await _context.BalanceView.ToListAsync();            
 
             Deudas deudas = new Deudas();
 
